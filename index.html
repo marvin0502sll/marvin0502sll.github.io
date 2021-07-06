@@ -303,8 +303,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/CDP/" itemprop="url" rel="index">
-                    <span itemprop="name">CDP</span>
+                  <a href="/categories/Deloitte/" itemprop="url" rel="index">
+                    <span itemprop="name">Deloitte</span>
                   </a>
                 </span>
 
@@ -314,169 +314,7 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/CDP/hive/" itemprop="url" rel="index">
-                    <span itemprop="name">hive</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="select"><a href="#select" class="headerlink" title="select"></a><strong>select</strong></h2><h3 id="时间"><a href="#时间" class="headerlink" title="时间"></a>时间</h3><ul>
-<li>日期<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">TO_DATE( )     <span class="comment">--TO_DATE(时间,&#x27;yyyy-MM-dd&#x27;)</span></span><br><span class="line"><span class="built_in">CURRENT_DATE</span>( )</span><br><span class="line">DATE_FORMAT( ) <span class="comment">--DATE_FORMAT(&#x27;2000-01-01&#x27;,&#x27;yyyy-MM-dd&#x27;)</span></span><br></pre></td></tr></table></figure></li>
-<li>时间戳<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">from_unixtime()     <span class="comment">--时间戳转换为日期</span></span><br><span class="line"><span class="built_in">cast</span>()     <span class="comment">--cast( as )，转换格式</span></span><br><span class="line"></span><br><span class="line">[e.g] from_unixtime(<span class="built_in">cast</span>(时间戳<span class="operator">/</span><span class="number">1000</span> <span class="keyword">as</span> <span class="type">bigint</span>),<span class="string">&#x27;yyyy-MM-dd HH:mm:ss&#x27;</span>)</span><br></pre></td></tr></table></figure>
-<h3 id="长度"><a href="#长度" class="headerlink" title="长度"></a>长度</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LENGTH()     <span class="comment">--LENGHT(字符串) IN (9,10)</span></span><br></pre></td></tr></table></figure>
-<h3 id="字符"><a href="#字符" class="headerlink" title="字符"></a>字符</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SUBSTR()      <span class="comment">--SUSTR(字符串,5,1) IN (&#x27;-&#x27;，&#x27;_&#x27;,&#x27;/&#x27;)</span></span><br></pre></td></tr></table></figure>
-<h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3></li>
-<li>判断组成<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rlike     <span class="comment">--字符串 rlike &#x27;^[0-9A-Za-z]+$&#x27;</span></span><br></pre></td></tr></table></figure></li>
-<li>else<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">trim</span>()     <span class="comment">--去除字符串前后空格</span></span><br></pre></td></tr></table></figure>
-<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">nvl()     <span class="comment">--nvl(表达式A,表达式B)；A为空返回B</span></span><br><span class="line">nvl2()     <span class="comment">--nvl(表达式A,表达式B,表达式C)；A为空返回C；不为空返回B</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://marvin0502sll.github.io/2021/07/07/sql/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2021/07/07/sql/" itemprop="url">deloitte-ciscdp-sql</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-07-07T05:29:09+08:00">
-                2021-07-07
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/deloitte/" itemprop="url" rel="index">
-                    <span itemprop="name">deloitte</span>
-                  </a>
-                </span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/deloitte/CISCDP/" itemprop="url" rel="index">
+                  <a href="/categories/Deloitte/CISCDP/" itemprop="url" rel="index">
                     <span itemprop="name">CISCDP</span>
                   </a>
                 </span>
@@ -606,7 +444,7 @@
               
                 <a href="/archives/%7C%7Carchive">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -617,21 +455,12 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
             
 
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
-                  <span class="site-state-item-name">tags</span>
-                </a>
-              </div>
             
 
           </nav>
